@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:fillViewport="true"
+  android:background="#E6DfD6">
+  <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:background="#E6DfD6">
+ 
+        <!--  Header Starts-->
+        <LinearLayout android:id="@+id/header"
+ 		   android:layout_width="fill_parent"
+  		  android:layout_height="wrap_content"
+  		  android:background="@layout/header_gradient"
+  		  android:paddingTop="5dip"
+  		  android:paddingBottom="5dip">
+        <!-- Logo Start-->
+        <ImageView android:src="@drawable/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:contentDescription="@string/app_name"/>
+        <!-- Logo Ends -->
+		</LinearLayout>
+        <!--  Header Ends -->
+ 
+    <RelativeLayout
+        android:id="@+id/Myprofilelogo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:contentDescription="@string/Myprofile"
+            android:src="@drawable/myprofile" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="17dp"
+            android:layout_toRightOf="@+id/imageView1"
+            android:text="My Profile" 
+            android:textSize="20dp"
+            android:textColor="#6aa01D"/>
+    </RelativeLayout>
+ 
+        <!-- Profile Details -->
+        <RelativeLayout
+          xmlns:android="http://schemas.android.com/apk/res/android"
+          android:orientation="vertical"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/loginform"
+          android:padding="10dip"
+          android:layout_below="@id/Myprofilelogo"
+          android:background="#F2e8DC"
+          android:layout_marginTop="10dp"
+          android:layout_marginLeft="15dp"
+          android:layout_marginRight="15dp">
+            
+              <!--  Name Label -->
+         <LinearLayout 
+             android:id="@+id/name"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal"
+             android:layout_marginTop="20dp"
+             android:background="#EEEEEE"
+             android:paddingLeft="5dp">
+             
+             <TextView
+              	android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/name"
+                android:textSize="20dp"
+                android:textColor="#669E9E"
+                />
+          
+          <TextView
+              	android:layout_marginLeft="20dp"
+              	android:id="@+id/MYProfile_TVname"
+              	android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textColor="#000000"/>
+         </LinearLayout>  
+         
+          <!--  Email Label -->
+         <LinearLayout 
+             android:id="@+id/email"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal"
+             android:layout_marginTop="30dp"
+             android:layout_below="@+id/name"
+             android:background="#EEEEEE"
+             android:paddingLeft="5dp">
+             
+             <TextView
+               	android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Email"
+                android:textSize="20dp"
+                android:textColor="#669E9E"
+                />
+          
+          <TextView
+              	android:layout_marginLeft="20dp"
+              	android:id="@+id/MYProfile_TVEmail"
+              	android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textColor="#000000"/>
+         </LinearLayout>  
+         
+          <!--  Job Done Label -->
+         <LinearLayout 
+             android:id="@+id/jobdone"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal"
+             android:layout_marginTop="30dp"
+             android:layout_below="@+id/email"
+             android:background="#EEEEEE"
+             android:paddingLeft="5dp">
+             
+             <TextView
+               	android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/JobDone"
+                android:textSize="20dp"
+                android:textColor="#669E9E"
+                />
+          
+          <TextView
+              	android:layout_marginLeft="20dp"
+              	android:id="@+id/MYProfile_TVJobdone"
+              	android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textColor="#000000"/>
+         </LinearLayout>  
+          
+         <!--  Amount Earned Label -->
+         <LinearLayout 
+             android:id="@+id/amountearned"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal"
+             android:layout_marginTop="30dp"
+             android:layout_below="@+id/jobdone"
+             android:background="#EEEEEE"
+             android:paddingLeft="5dp">
+             
+             <TextView
+               	android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/AmountEarned"
+                android:textSize="20dp"
+                android:textColor="#669E9E"
+                />
+          
+          <TextView
+              	android:layout_marginLeft="20dp"
+              	android:id="@+id/MYProfile_TVAmountEarned"
+              	android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textColor="#000000"/>
+         </LinearLayout>  
+         
+          
+       
+          
+ 
+	</RelativeLayout>
+
+        
+ 
+  </RelativeLayout>
+</ScrollView>

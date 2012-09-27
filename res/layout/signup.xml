@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:fillViewport="true"
+  android:background="#E6DfD6">
+  <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:background="#E6DfD6">
+ 
+        <!--  Header Starts-->
+        <LinearLayout android:id="@+id/header"
+ 		   android:layout_width="fill_parent"
+  		  android:layout_height="wrap_content"
+  		  android:background="@layout/header_gradient"
+  		  android:paddingTop="5dip"
+  		  android:paddingBottom="5dip">
+        <!-- Logo Start-->
+        <ImageView android:src="@drawable/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:contentDescription="@string/app_name"/>
+        <!-- Logo Ends -->
+		</LinearLayout>
+        <!--  Header Ends -->
+ 
+    
+ 
+        <!-- Login Form -->
+        <LinearLayout
+          xmlns:android="http://schemas.android.com/apk/res/android"
+          android:orientation="vertical"
+          android:layout_width="match_parent"
+          android:layout_height="390dp"
+          android:id="@+id/loginform"
+          android:padding="10dip"
+          android:layout_below="@id/header"
+          android:background="#F2e8DC"
+          android:layout_marginTop="30dp"
+          android:layout_marginLeft="25dp"
+          android:layout_marginRight="25dp">
+        
+            <TextView android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/signuppage"
+                android:textSize="18dp"
+                android:textColor="#000000"
+                />
+            
+             <!--  Name Label -->
+          <TextView android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/name"
+                android:textSize="20dp"
+                android:textColor="#669E9E"
+                />
+          
+          <EditText
+              	android:id="@+id/S_ETname"
+              	android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:inputType="text"
+                android:layout_marginBottom="20dip"
+                android:singleLine="true"/>
+            
+          <!--  Email Label -->
+          <TextView android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Email"
+                android:textSize="20dp"
+                android:textColor="#669E9E"
+                />
+          
+          <EditText
+              	android:id="@+id/S_ETEmail" 
+              	android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:inputType="textEmailAddress"
+                android:layout_marginBottom="20dip"
+                android:singleLine="true"/>
+          
+          <!--  Password Label -->
+          <TextView android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Password"
+                android:textSize="20dp"
+                android:textColor="#669E9E"/>
+          
+          <EditText 
+              	android:id="@+id/S_ETPass" 
+              	android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:singleLine="true"
+                android:inputType="textPassword"/>
+          
+          <!-- Login button -->
+
+          <Button
+              android:id="@+id/btnsignup"
+              android:layout_width="120dp"
+              android:layout_height="30dp"
+              android:textSize="20dp"
+              android:textColor="#ffffff"
+              android:layout_marginTop="10dip"
+              android:text="@string/signupbutton"
+              android:layout_gravity="right"
+              android:background="@layout/header_gradient" />
+          
+ 
+</LinearLayout>
+        <!-- Login Form Ends -->
+        
+  
+ 
+  </RelativeLayout>
+</ScrollView>
